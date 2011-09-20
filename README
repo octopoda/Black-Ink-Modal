@@ -1,0 +1,42 @@
+Simple Modal version 0.1
+
+Sample Code
+
+HTML
+
+<div id="YourName"></div>
+
+$("#yourName").modal({ style: 'error'});
+
+
+Options for Simple Modal
+
+
+
+Style: (string) 
+You have three options.  
+
+You can load an Error, Message or HTML page.  This option is required for the Modal to run.
+
+style: 'error',
+style: 'message',
+style: 'html'
+
+text: (string)
+If you use the style Error or Message this is the text to fill the Modal
+
+
+url: (string)
+If you use the style HTML this is the URL you would like to present;
+
+
+cancel: (callback)
+Callback for when the close Button is hit
+
+
+reportError: ( boolean)
+Visibility of Report Error Button in the modal
+
+reportURL:  (string)
+URL of hyperlink for Report Error Button
+
