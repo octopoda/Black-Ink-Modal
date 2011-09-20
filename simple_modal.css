@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document 
+
+Thanks to Ninja UI for the use of their Symbols. 
+
+*/
+
+
+@font-face {
+  font-family: 'Ninja Symbols';
+  src: url('fonts/symbols.eot');
+  src: url('fonts/symbols.eot?iefix') format('eot'),
+    url('fonts/symbols.woff') format('woff'),
+    url('fonts/symbols.ttf') format('truetype'),
+    url('fonts/symbols.svg#NinjaSymbolsMonospaced') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/* =============================
+	Modal Bar and Errors
+	===========================*/
+ 	
+.modal {
+	width:400px;
+	position:absolute;
+	background:#FFF;
+	text-align:center;
+	z-index:9999;
+	display:none;
+	border:1px solid black;
+	padding:20px;
+	text-align:center;
+	-webkit-box-shadow: rgba(255,255,255,0.8) 0px 0px 250px;
+   -moz-box-shadow: rgba(255,255,255,0.8) 0px  0px 250px;
+   box-shadow: rgba(255,255,255,0.8) 0px 0px 250px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   
+}
+
+.modal .close {
+	font-family: 'Ninja Symbols';
+    cursor:pointer;
+	font-size:30px;
+	background-color:#FFF;
+	height:30px;
+	width:30px;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	position:relative;
+	left:220px;
+	top:-35px;
+	color:#444;
+}
+
+.modal .close:before{content: '*';}
+.modal .close:hover {color:#CB0202}
+.modal .text {font-size:14px; font-weight:bold; margin-bottom:50px;}
+
+.modal .text ul {margin:0px; padding:0px; }
+.modal .text ul li {list-style:none; margin:0px !important; width:100%; }
+
+
+
+#mask {background-color:#444; z-index:999; position:absolute; top:0px left:0px;}
+
+.error.modal {background:#CB0202; color:#FFF;}
+
+.error .button {
+   margin:auto;
+   width:90px;
+   border-top: 1px solid #f5f5f5;
+   background: #b0adb0;
+   background: -webkit-gradient(linear, left top, left bottom, from(#c9cccf), to(#b0adb0));
+   background: -webkit-linear-gradient(top, #c9cccf, #b0adb0);
+   background: -moz-linear-gradient(top, #c9cccf, #b0adb0);
+   background: -ms-linear-gradient(top, #c9cccf, #b0adb0);
+   background: -o-linear-gradient(top, #c9cccf, #b0adb0);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.error .button:hover {border-top-color: #404040; background: #404040; color: #ccc;}
+.error .button:active {border-top-color: #242424; background: #242424;}
+
+.message.modal {color:green;}

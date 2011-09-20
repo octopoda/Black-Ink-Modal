@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Ink Modal</title>
+	<meta name="author" content="Zack Davis">
+	<!-- Date: 2011-09-20 -->
+	  <link rel="stylesheet" href="simple_modal.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+	  <script type="text/javascript" src="jQuery.simpleModal.01.min.js"></script>
+</head>
+<body>
+	<script>
+		$(function () {
+			$('#dialog').modal({
+				style: 'error',
+				text: 'this is an error',
+				reportError: true,
+				reportURL: 'http://cnn.com'
+			});
+		});
+</script>
+
+
+
+<div id="dialog"></div>
+</body>
+</html>
+
